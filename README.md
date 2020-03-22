@@ -1,16 +1,16 @@
 ## anolson.org
 
-Cloudflare resources for https://anolson.org
+Terraform resources for https://anolson.org
 
 ## Notes
 
-Generate API key in the Cloudflare dashboard and set the following env vars:
+Generate an API key in the Cloudflare dashboard and set the following env vars:
 
 * CLOUDFLARE_KEY
 * CLOUDFLARE_EMAIL
 * CLOUDFLARE_ACCT_ID
 
-### Export current records
+### Export current Cloudflare records
 
 ```
 $ go get -u github.com/cloudflare/cf-terraforming/...
