@@ -1,9 +1,12 @@
-variable cloudflare_email {}
-variable cloudflare_api_key {}
-variable cloudflare_account_id {}
+terraform {
+  backend "remote" {
+    hostname = "app.terraform.io"
+    organization = "anolson"
 
-variable "domain" {
-  default = "anolson.org"
+    workspaces {
+      name = "anolson-org"
+    }
+  }
 }
 
 provider "cloudflare" {
